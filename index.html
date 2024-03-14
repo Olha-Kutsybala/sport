@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240312152308">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240314201618">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 		</header>
 		<main class="page">
 			<section class="hero">
-				<div class="hero__container">
+				<div class="hero__container pd-l-r">
 					<div class="hero__start"></div>
 					<div class="hero__foto__mobile">
 						<div class="hero__foto__mobile1"></div>
@@ -83,8 +83,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="descr">
-				<div class="descr__container">
+			<section class="descr" data-watch data-watch-once>
+				<div class="descr__container pd-l-r">
 					<div class="descr__content">
 						<h5>Виразний рельєф</h5>
 						<h5><span>Гнучкість</span></h5>
@@ -92,7 +92,7 @@
 					</div>
 					<div class="descr__content">
 						<h5><span>Витривалість</span></h5>
-						<h5>30 хв на день</h5>
+						<h5><span class="number__font">30</span> хв на день</h5>
 					</div>
 					<div class="descr__content">
 						<h5>Гармонія</h5>
@@ -100,8 +100,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="marathon">
-				<div class="marathon__container">
+			<section class="marathon" data-watch data-watch-once>
+				<div class="marathon__container pd-l-r">
 					<h2 class="title">Marathon</h2>
 					<div class="marathon__flex">
 						<ul class="marathon__list">
@@ -131,7 +131,7 @@
 							</li>
 							<li class="marathon__item">
 								<p class="marathon__item__number">03</p>
-								<div class="marathon__item__content">
+								<div class="marathon__item__content marathon__item__content--pd-bottom-0">
 									<h4>Додаткові матеріали:</h4>
 									<ul class="marathon__sub__list">
 										<li class="marathon__sub__item">
@@ -161,8 +161,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="kind">
-				<div class="kind__container">
+			<section class="kind" data-watch data-watch-once>
+				<div class="kind__container pd-l-r">
 					<div class="kind__box">
 						<picture>
 							<source srcset="img/content_mobile2.jpg" media="(max-width: 767px)" type="image/jpg" />
@@ -170,28 +170,242 @@
 							<source srcset="img/content_desktop2.jpg" media="(min-width: 1200px)" type="image/jpg" />
 							<img src="img/content_mobile2.jpg" alt="Дизайн" loading="lazy" width="274" height="261" class="marathon__foto2" />
 						</picture>
+						<div class="kind__box__content">
+							<h2 class="kind__box__title kind__box__title--violet">Yoga</h2>
+							<p class="kind__box__sub__title">ком’юніті</p>
+							<p class="kind__box__descr">
+								Усі учасниці мають доступ до чату курсу, де можна отримати
+								зворотній зв’язок беспосередньо від тренера, а також відчути
+								підтримку та заряд мотивації від інших дівчат
+							</p>
+						</div>
 					</div>
-					<picture>
-						<source srcset="img/content_mobile3.jpg" media="(max-width: 767px)" type="image/jpg" />
-						<source srcset="img/content_tablet3.jpg" media="(min-width: 768px) and (max-width: 1199px)" type="image/jpg" />
-						<source srcset="img/content_desktop3.jpg" media="(min-width: 1200px)" type="image/jpg" />
-						<img src="img/content_mobile3.jpg" alt="Дизайн" loading="lazy" width="246" height="368" class="marathon__foto3" />
-					</picture>
-					<picture>
-						<source srcset="img/content_mobile4.jpg" media="(max-width: 767px)" type="image/jpg" />
-						<source srcset="img/content_tablet4.jpg" media="(min-width: 768px) and (max-width: 1199px)" type="image/jpg" />
-						<source srcset="img/content_desktop4.jpg" media="(min-width: 1200px)" type="image/jpg" />
-						<img src="img/content_mobile4.jpg" alt="Дизайн" loading="lazy" width="259" height="387" class="marathon__foto4" />
-					</picture>
+					<div class="kind__box">
+						<picture>
+							<source srcset="img/content_mobile3.jpg" media="(max-width: 767px)" type="image/jpg" />
+							<source srcset="img/content_tablet3.jpg" media="(min-width: 768px) and (max-width: 1199px)" type="image/jpg" />
+							<source srcset="img/content_desktop3.jpg" media="(min-width: 1200px)" type="image/jpg" />
+							<img src="img/content_mobile3.jpg" alt="Дизайн" loading="lazy" width="246" height="368" class="marathon__foto3" />
+						</picture>
+						<div class="kind__box__content">
+							<h2 class="kind__box__title">TRAINING</h2>
+							<p class="kind__box__sub__title">В ЗРУЧНИЙ ЧАС</p>
+							<p class="kind__box__descr">
+								Учасниці отримують персональний доступ до тренувань в
+								особистому кабінеті та самі обирають зручний день/час для
+								заняття. <span>Доступ до курсу триває 5 тижнів</span>
+							</p>
+						</div>
+					</div>
+					<div class="kind__box">
+						<picture>
+							<source srcset="img/content_mobile4.jpg" media="(max-width: 767px)" type="image/jpg" />
+							<source srcset="img/content_tablet4.jpg" media="(min-width: 768px) and (max-width: 1199px)" type="image/jpg" />
+							<source srcset="img/content_desktop4.jpg" media="(min-width: 1200px)" type="image/jpg" />
+							<img src="img/content_mobile4.jpg" alt="Дизайн" loading="lazy" width="259" height="387" class="marathon__foto4" />
+						</picture>
+						<div class="kind__box__content">
+							<h2 class="kind__box__title kind__box__title--violet">Focus</h2>
+							<p class="kind__box__sub__title">
+								<span>на здоров’ї,</span> <br />
+								a не на зменшенні ваги
+							</p>
+							<p class="kind__box__descr">
+								В першу чергу заняття направлені на покращення самопочуття. Ми
+								не фокусуємося на схудненні, наша мета - зробити йогу частиною
+								свого життя, а не забігом на коротку дистанцію.
+							</p>
+						</div>
+					</div>
+					<div class="kind__box">
+						<picture>
+							<source srcset="img/content_mobile5.jpg" media="(max-width: 767px)" type="image/jpg" />
+							<source srcset="img/content_tablet5.jpg" media="(min-width: 768px) and (max-width: 1199px)" type="image/jpg" />
+							<source srcset="img/content_desktop5.jpg" media="(min-width: 1200px)" type="image/jpg" />
+							<img src="img/content_mobile5.jpg" alt="Дизайн" loading="lazy" width="266" height="298" class="marathon__foto5" />
+						</picture>
+						<div class="kind__box__content">
+							<h2 class="kind__box__title">trainer</h2>
+							<p class="kind__box__sub__title">завжди на зв’язку</p>
+							<p class="kind__box__descr">
+								На додаток до лекцій з поясненням роботи м’язів нашого тіла,
+								тренер коментує техніку виконання кожної вправи на курсі. Адже
+								ключ до результату не у швидкості, а у правильності виконання.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about" data-watch data-watch-once>
+				<div class="about__container pd-l-r">
+					<h2 class="about__title"><span>about me</span></h2>
+					<div class="about__content">
+						<picture>
+							<source srcset="img/content_mobile6.jpg" media="(max-width: 767px)" type="image/jpg" />
+							<source srcset="img/content_tablet6.jpg" media="(min-width: 768px) and (max-width: 1199px)" type="image/jpg" />
+							<source srcset="img/content_desktop6.jpg" media="(min-width: 1200px)" type="image/jpg" />
+							<img src="img/content_mobile6.jpg" alt="Дизайн" loading="lazy" width="263" height="334" class="marathon__foto6" />
+						</picture>
+						<ul class="marathon__sub__list about__item">
+							<li class="marathon__sub__item about__item">
+								8 років у сфері йоги
+							</li>
+							<li class="marathon__sub__item about__item">
+								Вища освіта за спеціальністю «Здоров'я людини» та професійна
+								кваліфікація «Фахівець з фізичної реабілітації,
+								інструктор-методист з фізичної культури та спорту»
+							</li>
+							<li class="marathon__sub__item about__item">
+								<span class="number__font">2000+</span> задоволених атлеток
+							</li>
+							<li class="marathon__sub__item about__item">
+								Прозора система оплати та офіційно зареєстрований бізнес
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="tariff" data-watch data-watch-once>
+				<div class="tariff__container pd-l-r">
+					<h2 class="tariff__title">Marathon tariff plans</h2>
+					<h4 class="tariff__text">обери найкомфортніший для себе</h4>
+					<ul class="marathon__list tariff__list">
+						<li class="marathon__item">
+							<p class="marathon__item__number">01</p>
+							<div class="marathon__item__content">
+								<h2 class="tariff__subtitle">basic</h2>
+								<div class="tariff__box">
+									<ul class="marathon__sub__list">
+										<li class="marathon__sub__item tariff__sub__item">
+											Доступ на місяць
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Комплекс тренувань на 21 день
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Ефір “секрети жіночої сексуальності”
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Чат групи
+										</li>
+									</ul>
+									<p class="tariff__price">
+										<span class="number__font">1990</span> ₴
+									</p>
+									<button type="button" class="button tariff__button">
+										придбати
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="marathon__item">
+							<p class="marathon__item__number">02</p>
+							<div class="marathon__item__content">
+								<h2 class="tariff__subtitle">standart</h2>
+								<div class="tariff__box">
+									<ul class="marathon__sub__list">
+										<li class="marathon__sub__item tariff__sub__item">
+											Доступ на місяць
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Комплекс тренувань на 21 день
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Ефір “секрети жіночої сексуальності”
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Чат групи
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Практика "Вільні стегна" + МФР
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Комплекс для діафрагми та дихання
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Ефір "сексуальність у відносинах"
+										</li>
+									</ul>
+									<p class="tariff__price">
+										<span class="number__font">2290</span> ₴
+									</p>
+									<button type="button" class="button tariff__button">
+										придбати
+									</button>
+								</div>
+							</div>
+						</li>
+						<li class="marathon__item marathon__item--last">
+							<p class="marathon__item__number">03</p>
+							<div class="marathon__item__content">
+								<h2 class="tariff__subtitle">pro</h2>
+								<div class="tariff__box tariff__box--last">
+									<ul class="marathon__sub__list">
+										<li class="marathon__sub__item tariff__sub__item">
+											Доступ на місяць
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Комплекс тренувань на 21 день
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Ефір “секрети жіночої сексуальності”
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Чат групи
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Практика "Вільні стегна" + МФР
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Комплекс для діафрагми та дихання
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Ефір "сексуальність у відносинах"
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Практика на все тіло
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Практика з акцентом на верх + МФР
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Комплекс для розслаблення шиї та плечей
+										</li>
+										<li class="marathon__sub__item tariff__sub__item">
+											Вебінар з інтимних м'язів (МТД)
+										</li>
+									</ul>
+									<p class="tariff__price">
+										<span class="number__font">2790</span> ₴
+									</p>
+									<button type="button" class="button tariff__button">
+										придбати
+									</button>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__container">
+			<div class="footer__container pd-l-r">
+				<div class="footer__content">
+					<a class="footer__text">Договір оферти</a>
+					<a class="footer__text">Політика конфіденційності</a>
+				</div>
+				<div class="footer__content">
+					<p class="footer__text">Contacts</p>
+					<div class="footer__box__social">
+						<a href="#"><img src="img/icons/instagram.svg" alt="instagram" width="28" height="28" /></a>
+						<a href="#"><img src="img/icons/telegram.svg" alt="telegram" width="28" height="28" /></a>
+					</div>
+				</div>
 			</div>
 		</footer>
+
 	</div>
-	<script src="js/app.min.js?_v=20240312152308"></script>
+	<script src="js/app.min.js?_v=20240314201618"></script>
 </body>
 
 </html>

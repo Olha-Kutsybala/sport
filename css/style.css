@@ -79,6 +79,7 @@ h6 {
 body {
   text-transform: uppercase;
   font-weight: 600;
+  background-color: #f5f5f5;
 }
 
 .lock body {
@@ -87,6 +88,12 @@ body {
       touch-action: none;
   -ms-scroll-chaining: none;
       overscroll-behavior: none;
+}
+
+.loaded body {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 .wrapper {
@@ -140,6 +147,10 @@ body {
   color: #fffcf9;
   border-radius: 3px;
   text-transform: uppercase;
+  -webkit-transition: background-color 0.5s ease, -webkit-box-shadow 0.5s ease;
+  transition: background-color 0.5s ease, -webkit-box-shadow 0.5s ease;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
 }
 
 .button--fw {
@@ -198,6 +209,38 @@ pd-bottom-0 {
   padding-bottom: 0;
 }
 
+.number__font {
+  font-family: "Noto Sans Gujarati";
+  font-weight: 500;
+  color: #535353;
+}
+
+.tariff,
+.about,
+.kind,
+.marathon,
+.descr {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: translate(0px, 40px);
+      -ms-transform: translate(0px, 40px);
+          transform: translate(0px, 40px);
+}
+
+.tariff._watcher-view,
+.about._watcher-view,
+.kind._watcher-view,
+.marathon._watcher-view,
+.descr._watcher-view {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+}
+
 /*
 .icon-menu {
 	display: none;
@@ -250,10 +293,42 @@ pd-bottom-0 {
 }
 */
 
+.footer__container {
+  padding-top: 2.0625rem;
+  padding-bottom: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.125rem;
+}
+
+.footer__text {
+  display: block;
+  text-transform: none;
+}
+
+.footer__text:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.footer__box__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+}
+
 .hero__container {
   position: relative;
   padding-top: 0.25rem;
-  padding-bottom: 15rem;
+  padding-bottom: 10.75rem;
 }
 
 .hero__foto__mobile {
@@ -281,6 +356,7 @@ pd-bottom-0 {
 }
 
 .hero__start__text {
+  font-size: 1.125rem;
   line-height: 136%;
 }
 
@@ -298,11 +374,15 @@ pd-bottom-0 {
   position: absolute;
   top: 11%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-transform: translateX(-50%) rotate(360deg);
+      -ms-transform: translateX(-50%) rotate(360deg);
+          transform: translateX(-50%) rotate(360deg);
   z-index: 2;
   text-align: center;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 .hero__content__decor {
@@ -375,8 +455,23 @@ pd-bottom-0 {
   margin-bottom: 2.5rem;
 }
 
-.marathon__item__content:last-child {
-  padding-bottom: 1.25rem;
+.marathon__item__content--pd-bottom-0 {
+  padding-bottom: 0;
+}
+
+.marathon__item--last {
+  width: 100%;
+}
+
+.marathon__sub__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.875rem;
 }
 
 .marathon__sub__item {
@@ -388,6 +483,7 @@ pd-bottom-0 {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  line-height: 115%;
 }
 
 .marathon__sub__item::before {
@@ -400,19 +496,140 @@ pd-bottom-0 {
   background-color: #e59d9c;
 }
 
-.marathon__sub__item:not(:last-child) {
-  margin-bottom: 1.875rem;
-}
-
 .marathon__decor {
   font-family: "Mr De Haviland";
   text-transform: none;
   font-weight: 400;
   font-size: 3.375rem;
   letter-spacing: 0.05em;
-  -webkit-transform: translateY(-10px) rotate(-9deg);
-      -ms-transform: translateY(-10px) rotate(-9deg);
-          transform: translateY(-10px) rotate(-9deg);
+  -webkit-transform: translateY(-40px) rotate(-9deg);
+      -ms-transform: translateY(-40px) rotate(-9deg);
+          transform: translateY(-40px) rotate(-9deg);
+}
+
+.marathon__foto2 {
+  margin-bottom: 1.875rem;
+}
+
+.marathon__foto3 {
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+
+.marathon__foto4 {
+  margin-bottom: 1.875rem;
+}
+
+.marathon__foto3 {
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+
+.marathon__foto5 {
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem;
+}
+
+.marathon__foto6 {
+  display: block;
+  margin-bottom: 3.125rem;
+}
+
+.kind__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3.125rem;
+}
+
+.kind__box:nth-child(2n) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.kind__box__content {
+  max-width: 34.375rem;
+}
+
+.kind__box__title {
+  margin-bottom: 0.75rem;
+}
+
+.kind__box__title--violet {
+  color: #6f6bc1;
+}
+
+.kind__box__sub__title {
+  font-size: 2.25rem;
+  margin-bottom: 1.875rem;
+}
+
+.kind__box__descr {
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.about__container {
+  padding-bottom: 5.5rem;
+}
+
+.about__title {
+  margin-bottom: 4.375rem;
+}
+
+.about__item {
+  padding-left: 0rem;
+}
+
+.about__item span {
+  color: #7aa778;
+  font-size: 1.5rem;
+}
+
+.tariff__title {
+  line-height: 120%;
+}
+
+.tariff__text {
+  font-size: 1.25rem;
+}
+
+.tariff__subtitle {
+  line-height: 120%;
+  margin-bottom: 2.5rem;
+}
+
+.tariff__sub__item {
+  padding-left: 0rem;
+}
+
+.tariff__price {
+  font-size: 3rem;
+  color: #7aa778;
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+}
+
+.tariff__price span {
+  color: #7aa778;
+  font-size: 4rem;
+}
+
+.tariff__box .tariff__button {
+  width: 16.25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tariff__box {
+  padding-left: 1.875rem;
 }
 
 @media (min-width: 47.99875em) {
@@ -430,6 +647,25 @@ pd-bottom-0 {
 
   h4 {
     font-size: 2.25rem;
+  }
+
+  .pd-l-r {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 3.125rem;
   }
 
   .hero__container {
@@ -512,9 +748,10 @@ pd-bottom-0 {
   }
 
   .marathon__decor {
-    -webkit-transform: translateY(-230px) rotate(-31deg);
-        -ms-transform: translateY(-230px) rotate(-31deg);
-            transform: translateY(-230px) rotate(-31deg);
+    position: absolute;
+    -webkit-transform: translate(80px, -100px) rotate(-31deg);
+        -ms-transform: translate(80px, -100px) rotate(-31deg);
+            transform: translate(80px, -100px) rotate(-31deg);
   }
 
   .marathon__foto1 {
@@ -526,11 +763,115 @@ pd-bottom-0 {
     width: 22.5rem;
     height: 21.4375rem;
   }
+
+  .marathon__foto5 {
+    width: 20.3125rem;
+    height: 22.75rem;
+  }
+
+  .marathon__foto6 {
+    width: 33.8125rem;
+    height: 42.9375rem;
+  }
+
+  .kind__box {
+    gap: 1.875rem;
+  }
+
+  .kind__box__descr {
+    font-size: 1.125rem;
+  }
+
+  .about__container {
+    padding-bottom: 6.25rem;
+  }
+
+  .about__item {
+    max-width: 42.875rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+
+  .tariff__title,
+  .tariff__text {
+    text-align: center;
+  }
+
+  .tariff__text {
+    font-size: 2rem;
+  }
+
+  .tariff__price,
+  .tariff__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .tariff__box .tariff__button {
+    width: 28.125rem;
+  }
+
+  .tariff__box {
+    max-width: 34.0625rem;
+    padding-left: 5.9375rem;
+  }
+}
+
+@media (min-width: 550px) {
+  .marathon__decor {
+    -webkit-transform: translateY(-60px) rotate(-9deg);
+        -ms-transform: translateY(-60px) rotate(-9deg);
+            transform: translateY(-60px) rotate(-9deg);
+  }
+
+  .kind__box:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .kind__box {
+    gap: 0.625rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 900px) {
+  .marathon__foto6 {
+    margin-bottom: 0;
+  }
+
+  .about__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.25rem;
+  }
 }
 
 @media (min-width: 1200px) {
   h5 {
     font-size: 2.25rem;
+  }
+
+  .footer__container {
+    padding-top: 3.75rem;
   }
 
   .hero__container {
@@ -596,8 +937,12 @@ pd-bottom-0 {
     padding-bottom: 6.875rem;
   }
 
-  .marathon__sub__item:not(:last-child) {
-    margin-bottom: 2.5rem;
+  .marathon__item__content--pd-bottom-0 {
+    padding-bottom: 0;
+  }
+
+  .marathon__sub__list {
+    gap: 2.5rem;
   }
 
   .marathon__flex {
@@ -628,6 +973,73 @@ pd-bottom-0 {
   .marathon__foto4 {
     width: 26.3125rem;
     height: 39.4375rem;
+  }
+
+  .marathon__foto3 {
+    width: 26.1875rem;
+    height: 39.25rem;
+  }
+
+  .marathon__foto5 {
+    width: 31.6875rem;
+    height: 28.25rem;
+  }
+
+  .marathon__foto6 {
+    width: 39.5625rem;
+    height: 50.3125rem;
+  }
+
+  .kind__box {
+    gap: 3.125rem;
+  }
+
+  .about__container {
+    padding-bottom: 6.875rem;
+  }
+
+  .about__content {
+    gap: 3.125rem;
+  }
+
+  .tariff__list {
+    margin-top: 3.125rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .tariff__box {
+    padding-left: 2.1875rem;
+  }
+
+  .tariff__box--last {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 6.25rem;
+  }
+
+  .tariff__box--last .marathon__sub__list {
+    display: block;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+  }
+
+  .tariff__box--last .marathon__sub__list li {
+    margin-bottom: 1.875rem;
+    max-width: 28.125rem;
+  }
+}
+
+@media (min-width: 1380px) {
+  .tariff__box {
+    padding-left: 5.9375rem;
   }
 }
 
@@ -670,6 +1082,12 @@ pd-bottom-0 {
   }
 }
 
+@media (max-width: 523px) {
+  .tariff__text {
+    max-width: 8.6875rem;
+  }
+}
+
 @media (max-width: 400px) {
   .hero__start__text {
     max-width: 9.375rem;
@@ -709,5 +1127,31 @@ pd-bottom-0 {
   .hero__grid--1,
   .hero__grid--2 {
     display: none;
+  }
+
+  .marathon__foto6 {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .kind__box:nth-child(2n) img {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 47.99875em) and (max-width: 899px) {
+  .about__content {
+    max-width: 33.8125rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: #4e4a9b;
+    -webkit-box-shadow: #4e4a9b 0px 5px 15px;
+            box-shadow: #4e4a9b 0px 5px 15px;
   }
 }
