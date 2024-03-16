@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240314201618">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240316220737">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="hero">
+			<section class="hero" data-watch data-watch-once>
 				<div class="hero__container pd-l-r">
 					<div class="hero__start"></div>
 					<div class="hero__foto__mobile">
@@ -42,7 +42,7 @@
 						</picture>
 						<h4 class="hero__grid--4 hero__start__text" data-da=".hero__start, 767">
 							тривалість <br />
-							<span>21 день</span>
+							<span><span class="hero__start__number">21</span> день</span>
 						</h4>
 					</div>
 					<div class="hero__foto__tablet">
@@ -61,7 +61,7 @@
 					</div>
 					<div class="hero__foto__tablet">
 						<h4 class="hero__grid--7 hero__start__text hero__start__text--transform" data-da=".hero__start, 767, 0">
-							Старт марафону <br /><span>22 березня</span>
+							Старт марафону <br /><span><span class="hero__start__number">22</span> березня</span>
 						</h4>
 						<picture class="hero__grid--8">
 							<source srcset="img/hero/hero-mobile3.jpg" media="(max-width: 767px)" type="image/jpg" />
@@ -246,7 +246,7 @@
 							<source srcset="img/content_desktop6.jpg" media="(min-width: 1200px)" type="image/jpg" />
 							<img src="img/content_mobile6.jpg" alt="Дизайн" loading="lazy" width="263" height="334" class="marathon__foto6" />
 						</picture>
-						<ul class="marathon__sub__list about__item">
+						<ul class="marathon__sub__list about__list">
 							<li class="marathon__sub__item about__item">
 								8 років у сфері йоги
 							</li>
@@ -256,7 +256,10 @@
 								інструктор-методист з фізичної культури та спорту»
 							</li>
 							<li class="marathon__sub__item about__item">
-								<span class="number__font">2000+</span> задоволених атлеток
+								<p>
+									<span class="number__font">2000+</span> задоволених атлеток
+								</p>
+								<!-- <span class="number__font">2000+</span> задоволених атлеток -->
 							</li>
 							<li class="marathon__sub__item about__item">
 								Прозора система оплати та офіційно зареєстрований бізнес
@@ -405,7 +408,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20240314201618"></script>
+	<script src="js/app.min.js?_v=20240316220737"></script>
 </body>
 
 </html>
