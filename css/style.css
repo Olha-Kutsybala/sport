@@ -76,10 +76,12 @@ h6 {
   font-size: inherit;
 }
 
+.no-webp body{
+  background-image: url(../img/bg.jpg); }
+
 body {
   text-transform: uppercase;
   font-weight: 600;
-  background-color: #f5f5f5;
 }
 
 .lock body {
@@ -409,7 +411,7 @@ pd-bottom-0 {
   font-size: 13.125rem;
   text-transform: uppercase;
   color: #6f6bc1;
-  margin-bottom: 1.875rem;
+  margin-bottom: 3.125rem;
 }
 
 .hero__content__descr {
@@ -826,6 +828,10 @@ pd-bottom-0 {
     padding-bottom: 6.25rem;
   }
 
+  .about__item {
+    padding-left: 0.9375rem;
+  }
+
   .tariff__title,
   .tariff__text {
     text-align: center;
@@ -838,6 +844,10 @@ pd-bottom-0 {
 
   .tariff__text {
     font-size: 2rem;
+  }
+
+  .tariff__sub__item {
+    padding-left: 0rem;
   }
 
   .tariff__price {
@@ -911,6 +921,10 @@ pd-bottom-0 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+
+  .about__item {
+    padding-left: 0rem;
   }
 }
 
@@ -1181,6 +1195,9 @@ pd-bottom-0 {
   .hero__grid--8 {
     -ms-flex-item-align: end;
         align-self: flex-end;
+    -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+            transform: translateY(30px);
   }
 
   .hero__grid--1,
@@ -1201,3 +1218,5 @@ pd-bottom-0 {
             box-shadow: #4e4a9b 0px 5px 15px;
   }
 }
+
+.webp body{ background-image: url(../img/bg.webp); }
