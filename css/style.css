@@ -134,9 +134,8 @@ body {
 */
 
 [class*=__container] {
-  max-width: 79.375rem;
+  max-width: 77.5rem;
   margin: 0 auto;
-  padding: 0 0.9375rem;
 }
 
 .button {
@@ -216,6 +215,11 @@ pd-bottom-0 {
   font-family: "Noto Sans Gujarati";
   font-weight: 500;
   color: #535353;
+}
+
+.pd-l-r {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .tariff,
@@ -518,29 +522,6 @@ pd-bottom-0 {
           transform: translateY(-10px) rotate(-9deg);
 }
 
-.marathon__foto2 {
-  margin-bottom: 1.875rem;
-}
-
-.marathon__foto3 {
-  margin-top: 1.875rem;
-  margin-bottom: 3.125rem;
-}
-
-.marathon__foto4 {
-  margin-bottom: 1.875rem;
-}
-
-.marathon__foto3 {
-  margin-top: 1.875rem;
-  margin-bottom: 3.125rem;
-}
-
-.marathon__foto5 {
-  margin-top: 1.875rem;
-  margin-bottom: 3.125rem;
-}
-
 .marathon__foto6 {
   display: block;
   margin-bottom: 3.125rem;
@@ -565,7 +546,7 @@ pd-bottom-0 {
 }
 
 .kind__box__content {
-  max-width: 34.375rem;
+  max-width: 36.5625rem;
 }
 
 .kind__box__title {
@@ -651,12 +632,6 @@ pd-bottom-0 {
 .tariff__price span {
   color: #7aa778;
   font-size: 4rem;
-}
-
-.tariff__button {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .tariff__box .tariff__button {
@@ -777,6 +752,14 @@ pd-bottom-0 {
     padding-bottom: 6.25rem;
   }
 
+  .marathon h2 {
+    line-height: 130%;
+  }
+
+  .marathon__item__number {
+    font-size: 1.5rem;
+  }
+
   .marathon__item__content h4 {
     max-width: 16.6875rem;
   }
@@ -818,6 +801,10 @@ pd-bottom-0 {
 
   .kind__box {
     gap: 1.875rem;
+  }
+
+  .kind__box__title {
+    font-size: 6rem;
   }
 
   .kind__box__descr {
@@ -1082,6 +1069,12 @@ pd-bottom-0 {
             justify-content: space-between;
   }
 
+  .tariff__box .tariff__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .tariff__box {
     padding-left: 2.1875rem;
   }
@@ -1159,6 +1152,31 @@ pd-bottom-0 {
     display: block;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media (max-width: 599px) {
+  .marathon__foto2 {
+    margin-bottom: 1.875rem;
+  }
+
+  .marathon__foto3 {
+    margin-top: 1.875rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .marathon__foto4 {
+    margin-bottom: 1.875rem;
+  }
+
+  .marathon__foto3 {
+    margin-top: 1.875rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .marathon__foto5 {
+    margin-top: 1.875rem;
+    margin-bottom: 3.125rem;
   }
 }
 
